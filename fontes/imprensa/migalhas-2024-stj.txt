@@ -1,0 +1,46 @@
+
+STJ altera cálculo de tarifa para condomínios sem hidrômetro - Migalhas
+      .nsm-dialog.full-modal {
+        max-width: 1250px !important;
+      }
+      .nsm-dialog.md-modal {
+        max-width: 768px !important;
+      }
+      .nsm-dialog.dark > .nsm-content {
+        background-color: #202020 !important;
+      }
+      .nsm-content {
+        padding: 25px !important;
+      }
+      .nsm-dialog.dark > .nsm-content > .nsm-dialog-btn-close {
+        color: #ffffff !important;
+        top: 5px !important;
+        right: 5px !important;
+      }
+      .nsm-dialog.half-height-modal > .nsm-content {
+        height: 50vh !important;
+      }
+      .nsm-dialog.height-85-modal > .nsm-content {
+        height: 85vh !important;
+      }
+      .nsm-dialog.height-515-modal > .nsm-content {
+        height: 515px !important;
+      }
+      @media (max-width: 768px) {
+        .nsm-dialog.height-515-modal > .nsm-content {
+          height: calc(100vh - 50px) !important;
+        }
+      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QRFDNT1QDT");
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"STJ altera cálculo de tarifa para condomínios sem hidrômetro - Migalhas","description":"Por Karina Müller Marcel, Derick de Mendonça Rocha. Em 20\\/6\\/24, o STJ revisou o entendimento do Tema 414\\/STJ sobre a cobrança de taxas de água e esgoto em condomínios com um único hidrômetro, ...","keywords":"condomínios, hidrômetro, metodologia, STJ, tarifa","image":["https://medproc.migalhas.com.br/author.jpg._PROC_AC411585AT1AP11.jpg"],"datePublished":"2024-07-19T07:31:00-03:00","dateModified":"2024-07-22T13:32:11-03:00","author":[{"@type":"Person","name":"Derick de Mendonça Rocha","url":"https://www.migalhas.com.br/autor/derick-de-mendonca-rocha"},{"@type":"Person","name":"Karina Müller Marcel","url":""}],"publisher":{"@type":"Organization","name":"Migalhas","logo":{"@type":"ImageObject","url":"https://www.migalhas.com.br/img/og_migalhas.jpg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.migalhas.com.br/depeso/411585/stj-altera-calculo-de-tarifa-para-condominios-sem-hidrometro"}},{"@type":"BreadcrumbList","name":"Migalhas","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.migalhas.com.br/","name":"Migalhas"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.migalhas.com.br/depeso","name":"Migalhas de Peso"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://www.migalhas.com.br/depeso/411585/stj-altera-calculo-de-tarifa-para-condominios-sem-hidrometro","name":"STJ altera cálculo de tarifa para condomínios sem hidrômetro - Migalhas"}}]}]}
+var prebootInitFn = (function() {
+function start(prebootData,win){const _document=(win||window).document||{},currentScript=_document.currentScript||[].slice.call(_document.getElementsByTagName("script"),-1)[0];if(!currentScript)return void console.error("Preboot initialization failed, no currentScript has been detected.");let serverNode=currentScript.parentNode;if(!serverNode)return void console.error("Preboot initialization failed, the script is detached");serverNode.removeChild(currentScript);let eventSelectors=(prebootData.opts||{}).eventSelectors||[];const appData={root:prebootData.opts?getAppRoot(_document,prebootData.opts,serverNode):null,events:[]};prebootData.apps&&prebootData.apps.push(appData),eventSelectors=eventSelectors.map(eventSelector=>(eventSelector.hasOwnProperty("replay")||(eventSelector.replay=!0),eventSelector)),eventSelectors.forEach(eventSelector=>handleEvents(_document,prebootData,appData,eventSelector))}
+function createOverlay(_document){let overlay=_document.createElement("div");return overlay.setAttribute("id","prebootOverlay"),overlay.setAttribute("style","display:none;position:absolute;left:0;top:0;width:100%;height:100%;z-index:999999;background:black;opacity:.3"),_document.documentElement.appendChild(overlay),overlay}
+function getAppRoot(_document,opts,serverNode){const root={serverNode};return root.clientNode=opts.buffer?createBuffer(root):root.serverNode,opts.disableOverlay||(root.overlay=createOverlay(_document)),root}
+function handleEvents(_document,prebootData,appData,eventSelector){const serverRoot=appData.root.serverNode;!serverRoot||eventSelector.events.forEach(eventName=>{const handler=createListenHandler(_document,prebootData,eventSelector,appData);serverRoot.addEventListener(eventName,handler,!0),prebootData.listeners&&prebootData.listeners.push({node:serverRoot,eventName,handler})})}
+function createListenHandler(_document,prebootData,eventSelector,appData){const CARET_EVENTS=["keyup","keydown","focusin","mouseup","mousedown"],CARET_NODES=["INPUT","TEXTAREA"],matches=_document.documentElement.matches||_document.documentElement.msMatchesSelector,opts=prebootData.opts;return function(event){const node=event.targ

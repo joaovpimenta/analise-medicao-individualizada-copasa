@@ -1,0 +1,70 @@
+
+Copasa recebe multa milionária por cobrança irregular de tarifa de esgoto - Gerais - Estado de Minas
+var BASEXJ = "https://app.em.com.br/";
+var BASEDX = "https://app.em.com.br/";
+      // console.log("FIRST PROMISE SETTED"),new Promise(a=>{setTimeout(()=>{a(console.log("TIMEOUT FIRST PROMISE")),window.location.reload(!1)},21e4)})
+      function isVisible(el) {
+        const positions = el.getBoundingClientRect();
+        const start = positions.top;
+        const end = positions.bottom;
+        let isVisible = false
+        if((start >= 0) && (end 
+{
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Bruno Luis Barros"
+        }
+    ],
+    "dateModified": "2023-08-23T14:44:00-03:00",
+    "datePublished": "2023-08-22T18:42:00-03:00",
+    "description": "Recentemente, em 7 de julho, o Minist\u00e9rio P\u00fablico tamb\u00e9m informou que a companhia foi multada em R$ 10,8 mi. Nova medida do Procon ainda cabe recurso; entenda",
+    "hasPart": [
+        {
+            "@type": "WebPageElement",
+            "cssSelector": "main",
+            "isAccessibleForFree": true
+        }
+    ],
+    "headline": "Copasa recebe multa milion\u00e1ria por cobran\u00e7a irregular de tarifa de esgoto",
+    "image": "https://i.em.com.br/2iEBGCnQ2AxK4w6FJASh18Klcnw=/1200x720/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/08/22/1550174/barragem-submersa-da-copasa-no-rio-das-velhas-em-nova-lima_1_114504.jpg",
+    "isAccessibleForFree": true,
+    "isPartOf": {
+        "@type": [
+            "CreativeWork",
+            "Product"
+        ],
+        "name": "Estado de Minas",
+        "productID": "em.com.br:assinante.mensal.v2"
+    },
+    "mainEntityOfPage": {
+        "@id": "https://www.em.com.br/app/noticia/gerais/2023/08/22/interna_gerais,1550174/copasa-recebe-multa-milionaria-por-cobranca-irregular-de-tarifa-de-esgoto.shtml",
+        "@type": "WebPage"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://imgsapp.em.com.br/portlet/606/30851/20200313105114639921a.jpg"
+        },
+        "name": "Estado de Minas"
+    }
+}
+window.product_id="em.com.br:assinante.mensal.v2";
+window.EMBEDS="";
+window.AUTORES_GRUPO=[
+    "Bruno Luis Barros | Estado de Minas"
+];
+window.LOCALIDADES_NOTICIA=null;
+window.id_acesso_noticia=0;
+window.AUTORES_NOTICIA=[
+    "Bruno Luis Barros"
+];
+          var EMBEDS = "";
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({'da':{'page':{'metrics':{"articleId": "www.em.com.br_noticia_127983242361_1550174", "articlePublishTime": "2023-08-22 21:42:00Z", "articleSource": "Estado de Minas", "articleType": "NewsArticle", "articleUpdateTime": "2023-08-23 17:44:00Z", "author": "Bruno Luis Barros", "categories": "minas-gerais, defesa do consumidor", "characterCount": 2198, "documentTitle": "Copasa recebe multa milionária por cobrança irregular de tarifa de esgoto", "hierarchy": "Noticia/Gerais", "mediaType": "", "metered": "0", "pageNumber": "1", "pageType": "article", "paragraphCount": 14, "premium": "open", "publicationName": "Jornal Estado de Minas", "section": "Gerais", "wordCount": 268}}}});
+var AUTORES_NOTICIA = ['Bruno Luis Barros'];
+var LOCALIDADES_NOTICIA = "None";
+var noticias_recomendadas = {"ultimas": [], "debug": {"version": 2, "update": "2026-07-03 15:59:21.436319"}, "mais_lidas": [{"categoria": "MELHOR DE MINAS", "imagem_330x220": "https://i.em.com.br/CUDK1aaRKgM_SqJCuHjrbk6bYGs=/330x220/smart/filters:format(jpg)/imgsapp.em.com.br/app/noticia_127983242361/2023/03/16/1469631/ouro-preto-e-tiradentes_1_3838068.png", "imagem": "https://imgsapp.em.com.br/app/noticia_127983242361/2023/03/16/1469631/ouro-preto-e-tiradentes_1_3838068.png", "url": "https://www.em.com.br/app/noticia/turismo/2023/03/16/interna_turismo,1469631/ouro-preto-ou-tiradentes-qual-a-melhor-cidade-historica-de-minas.shtml", "origem": "analytics", "us_acesso": null, "v": 2, "pasta": "Noticia/Turismo", "conteudo": "noticia", "data": "14:23 - 16/03/2023", "titulo": "Ouro Preto ou Tiradentes? Qual a melhor cidade hist\u00f3rica de Minas?", "descricao": "Pesquisa revela que, para 77% dos brasileiros, uma motiva\u00e7\u00e3o para viajar \u00e9 conhecer lugares hist\u00f3ricos. E as duas cidades est\u00e3o bem recomendadas\n"}, {"categoria": "ABALOS EM SETE LAGOAS", "imagem_330x220": "https://i.em.com.br/MT7--OWyOs6F4ffOygDI6jbCTsQ=/330x220/smart/filters:format(jpg)/imgsapp.em.com.br/app/noticia_127983242361/2022/06/03/1370852/vista-de-sete-lagoas-ate-2015-cidade-consumia-agua-retirada-do-subterraneo-por-meio-de-pocos-tubulares-secando-a-rede-de-tuneis-e-cavernas-_1_182637.jpg", "imagem": "https://imgsapp.em.com.br/app/noticia_127983242361/2022/06/03/1370852/vista-de-sete-lagoas-ate-2015-cidade-consumia-agua-retirada-do-subterraneo-por-meio-de-pocos-tubulares-secando-a-rede-de-tuneis-e-cavernas-_1_182637.jpg", "url": "https://www.

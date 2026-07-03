@@ -1,0 +1,12 @@
+# Arquivos temporários
+*.tmp
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
+Thumbs.db
