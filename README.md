@@ -6,11 +6,11 @@
 
 Compilar fontes oficiais e análises sobre como são aplicadas as tarifas de água, esgoto e tratamento de esgoto pela Copasa em Minas Gerais, com foco em:
 - Estrutura tarifária (taxa fixa + variável progressiva)
-- Percentual do esgoto sobre a água
+- Percentual do esgoto sobre a água (74% ED / 30% EE)
 - Categorias de usuários (Residencial, Comercial, Industrial, Social)
 - Medição individualizada vs rateio em condomínios
-- Jurisprudência (STJ Tema 414)
-- Legislação aplicável (Leis 11.445/2007 e 14.026/2020)
+- Jurisprudência (STJ Tema 414, TJMG)
+- Legislação aplicável (Leis 11.445/2007, 14.026/2020, 13.312/2016)
 
 ---
 
@@ -18,30 +18,51 @@ Compilar fontes oficiais e análises sobre como são aplicadas as tarifas de ág
 
 ```
 copasa-tarifas/
-├── README.md                        ← Este arquivo
-├── docs/                            ← Documentos analíticos produzidos
-│   ├── fontes_tarifas_copasa.md            Lista de ~60 fontes com links
-│   ├── citacoes_tarifas_copasa_APA.md      Citações textuais em formato APA
-│   └── tarifas_copasa_apartamentos.md      Análise completa com exemplos reais
-├── fontes/                          ← Fontes primárias baixadas
-│   ├── arsae-mg/                    ← ARSAE-MG (agência reguladora)
-│   │   ├── resolucao-217-2025.pdf         Resolução tarifária vigente (2026)
-│   │   ├── resolucao-197-2024.pdf         Resolução reajuste 2024
-│   │   ├── nt-cre-10-2025.pdf             NT Estrutura Tarifária (~85 páginas)
-│   │   ├── nt-grt-07-2024.pdf             NT Reajuste 2024
-│   │   ├── tarifas-copasa-2025-2026.xlsx  Planilha com tabelas tarifárias históricas
-│   │   └── pagina-copasa-arsae.html       Página da Copasa no site da ARSAE
-│   ├── copasa/                      ← Documentos oficiais da Copasa
-│   │   └── manual-medicao-individualizada.pdf  Manual técnico (79 páginas)
-│   ├── legislacao/                  ← Leis federais
-│   │   ├── lei-11445-2007.html            Lei do Saneamento Básico
-│   │   └── lei-14026-2020.html            Marco Legal do Saneamento
-│   ├── imprensa/                    ← Artigos jornalísticos
-│   │   ├── em-2023-multa-copasa.txt       Multa de R$ 11,2 mi (Estado de Minas)
-│   │   └── migalhas-2024-stj.txt          Revisão Tema 414 STJ (Migalhas)
-│   └── judiciario/                  ← Fontes judiciais (a preencher)
-└── .gitignore
+├── README.md
+├── .gitignore
+├── docs/                                    ← Documentos analíticos
+│   ├── fontes_tarifas_copasa.md                    ~60 fontes com links
+│   ├── citacoes_tarifas_copasa_APA.md              Citações textuais formato APA
+│   └── tarifas_copasa_apartamentos.md              Análise com 3 cenários e exemplos
+├── fontes/
+│   ├── arsae-mg/                            ← ARSAE-MG (agência reguladora)
+│   │   ├── resolucoes/                             19 resoluções (2018-2026)
+│   │   ├── notas-tecnicas/                         10 notas técnicas
+│   │   ├── nt-cre-01-2021-reconstrucao.pdf
+│   │   ├── nt-cre-02-2021-custos-capital.pdf
+│   │   ├── nt-cre-03-2021-coe.pdf
+│   │   ├── avaliacao-resultado-regulatorio-2025.pdf
+│   │   ├── relatorio-tecnico-pro-mananciais.pdf
+│   │   ├── tarifas-copasa-2025-2026.xlsx
+│   │   └── pagina-copasa-arsae.html
+│   ├── copasa/                              ← Documentos oficiais Copasa
+│   │   ├── manual-medicao-individualizada.pdf      Manual 79 págs
+│   │   ├── regulamentos/regulamento-servicos-2009.pdf
+│   │   ├── copasa-estatuto-social.pdf
+│   │   └── copasa-codigo-conduta.pdf
+│   ├── legislacao/                          ← Leis
+│   │   ├── federal/
+│   │   │   ├── lei-11445-2007.html                 Saneamento Básico
+│   │   │   ├── lei-14026-2020.html                 Marco do Saneamento
+│   │   │   ├── lei-13312-2016.html                 Medição individualizada
+│   │   │   └── lei-14898-2024.html                 Tarifa Social
+│   │   └── estadual/
+│   │       ├── lei-18309-2009-arsae.pdf            Criação ARSAE-MG
+│   │       └── decreto-47884-2020.pdf              Regulamento ARSAE-MG
+│   ├── imprensa/                            ← Artigos jornalísticos
+│   │   ├── em-2023-multa-copasa.txt
+│   │   ├── migalhas-2024-stj.txt
+│   │   └── outros/                                  8 artigos adicionais
+│   ├── judiciario/                          ← Fontes judiciais
+│   │   ├── stj/                                    STJ Tema 414 + repetitivos
+│   │   ├── tjmg/                                   Buscas jurisprudenciais TJMG
+│   │   ├── jusbrasil-busca-copasa.html
+│   │   └── jusbrasil-busca-esgoto.html
+│   └── ana/                                ← ANA (Agência Nacional de Águas)
+│       └── ana-pagina-saneamento.html
 ```
+
+> **Total: ~70 arquivos baixados, ~35 MB de fontes**
 
 ---
 
@@ -50,14 +71,14 @@ copasa-tarifas/
 ### Tarifa de esgoto
 - **Esgoto Dinâmico (ED):** ≈74% da tarifa de água (NT CRE 10/2025)
 - **Esgoto Estático (EE):** 30% da tarifa de água (Art. 3º, Res. 217/2025)
-- Cobrado mesmo sem tratamento — Art. 2º: "sem diferenciação tarifária em razão da existência ou não de tratamento"
+- Cobrado mesmo sem tratamento — Art. 2º: "sem diferenciação tarifária"
 
-### Categorias (Res. 217/2025)
+### Categorias (Res. 217/2025 — vigência jan/2026)
 | Categoria | Tarifa Fixa Água | 1ª faixa (0-5m³) |
 |-----------|:---:|:---:|
 | Residencial | R$ 25,77 | R$ 2,69/m³ |
-| Residencial Social I (65% desc.) | R$ 9,02 | R$ 0,94/m³ |
-| Residencial Social II (50-55% desc.) | R$ 11,59 | R$ 1,35/m³ |
+| Social I (65% desc.) | R$ 9,02 | R$ 0,94/m³ |
+| Social II (50-55% desc.) | R$ 11,59 | R$ 1,35/m³ |
 | Comercial | R$ 42,86 | R$ 5,34/m³ |
 | Industrial | R$ 42,86 | R$ 5,34/m³ |
 
@@ -65,43 +86,47 @@ copasa-tarifas/
 | | Individual | Rateio Puro | Rateio Proporcional |
 |---|---|---|---|
 | Total Copasa | R$ 642,56 | R$ 570,52 | R$ 570,52 |
-| Apto baixo consumo (6m³) | R$ 77,47 | R$ 142,63 🔴 | R$ 71,32 🟢 |
-| Apto alto consumo (22m³) | R$ 326,43 | R$ 142,63 🟢 | R$ 261,49 🟡 |
+| Apto baixo (6m³) | R$ 77,47 | R$ 142,63 🔴 | R$ 71,32 🟢 |
+| Apto alto (22m³) | R$ 326,43 | R$ 142,63 🟢 | R$ 261,49 🟡 |
 
 ---
 
-## Como usar este repositório
+## Como usar
 
 ```bash
-# Clonar
-git clone <url> copasa-tarifas
-cd copasa-tarifas
+git clone <url> copasa-tarifas && cd copasa-tarifas
 
-# Ler as análises
+# Ler análises
 cat docs/tarifas_copasa_apartamentos.md
 
-# Consultar fontes primárias
-evince fontes/arsae-mg/resolucao-217-2025.pdf
+# Consultar fontes
+evince fontes/arsae-mg/resolucoes/resolucao-217-2025.pdf
 
-# Buscar por termo específico nos PDFs
-pdfgrep "esgoto" fontes/arsae-mg/*.pdf
+# Buscar nos PDFs
+pdfgrep -r "esgoto" fontes/arsae-mg/
+
+# Buscar nos HTMLs
+grep -r "tarifa" fontes/imprensa/
 ```
 
 ---
 
-## Fontes consultadas (links originais)
+## Fontes consultadas
 
-Ver `docs/fontes_tarifas_copasa.md` para a lista completa com ~60 links.
-
-### Principais
-- ARSAE-MG: https://www.arsae.mg.gov.br/
-- Copasa: https://www.copasa.com.br/
-- Planalto (leis): https://www.planalto.gov.br/
-- JusBrasil: https://www.jusbrasil.com.br/
+- **ARSAE-MG**: https://www.arsae.mg.gov.br/
+- **Copasa**: https://www.copasa.com.br/ | https://ri.copasa.com.br/
+- **Planalto**: https://www.planalto.gov.br/
+- **ALMG**: https://www.almg.gov.br/
+- **JusBrasil**: https://www.jusbrasil.com.br/
+- **TJMG**: https://www4.tjmg.jus.br/
+- **STJ**: https://processo.stj.jus.br/
+- **ANA**: https://www.gov.br/ana/
+- **Estado de Minas**: https://www.em.com.br/
+- **Exame**: https://exame.com/
+- **Migalhas**: https://www.migalhas.com.br/
 
 ---
 
-## Licença
+## Nota sobre arquivos indisponíveis
 
-Os documentos oficiais (ARSAE-MG, Copasa, legislação) são de domínio público.
-As análises neste repositório são de uso livre com atribuição.
+Algumas resoluções ARSAE-MG não estavam disponíveis como PDF direto (versões de 150, 161, 180, 189, 203, 208, 209). Foram salvas como HTML quando possível. Para acessar o texto integral, consulte os links no documento `docs/fontes_tarifas_copasa.md`.
