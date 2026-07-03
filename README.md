@@ -1,6 +1,6 @@
-# Repositório: Tarifas de Água e Esgoto — Copasa MG
+# Análise de Medição Individualizada — Copasa MG
 
-> Criado em 03/07/2026 | Pesquisa documental sobre a estrutura tarifária da Copasa
+> Repositório: `analise-medicao-individualizada-copasa`
 
 ## Objetivo
 
