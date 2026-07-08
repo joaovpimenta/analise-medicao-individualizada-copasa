@@ -39,11 +39,14 @@ export function App() {
       </main>
       <footer className="footer">
         <p>
+          <strong>Análise de Medição Individualizada — COPASA</strong>
+        </p>
+        <p>
           Pesquisa documental sobre tarifas de água e esgoto da COPASA e
           medição individualizada em condomínios.
         </p>
         <p>
-          Fontes: ARSAE-MG, COPASA, STJ, TJMG, legislação federal e estadual.
+          ARSAE-MG &middot; COPASA &middot; STJ &middot; TJMG &middot; Legislação Federal e Estadual
         </p>
       </footer>
     </div>

@@ -5,29 +5,29 @@ export interface FonteRef {
   descricao?: string
 }
 
-const BASE =
-  'https://github.com/joaovpimenta/analise-medicao-individualizada-copasa/blob/main/fontes'
+const RAW =
+  'https://raw.githubusercontent.com/joaovpimenta/analise-medicao-individualizada-copasa/main/fontes'
 
-export const arsae = (f: string) => `${BASE}/arsae-mg/${f}`
-export const copasa = (f: string) => `${BASE}/copasa/${f}`
-export const legislacao = (f: string) => `${BASE}/legislacao/${f}`
-export const imprensa = (f: string) => `${BASE}/imprensa/${f}`
-export const judiciario = (f: string) => `${BASE}/judiciario/${f}`
+export const arsae = (f: string) => `${RAW}/arsae-mg/${f}`
+export const copasa = (f: string) => `${RAW}/copasa/${f}`
+export const legislacao = (f: string) => `${RAW}/legislacao/${f}`
+export const imprensa = (f: string) => `${RAW}/imprensa/${f}`
+export const judiciario = (f: string) => `${RAW}/judiciario/${f}`
 
 export const FONTES = {
   resolucao217: {
     titulo: 'Resolução ARSAE 217/2025',
-    url: arsae('resolucao-217-2025.pdf'),
+    url: 'https://www.arsae.mg.gov.br/wp-content/uploads/2025/12/Resolucao_ArsaeMG_217_2025.pdf',
     descricao: 'Revisão tarifária — quadro de tarifas COPASA 2026–2029',
   },
   resolucao226: {
     titulo: 'Resolução ARSAE 226/2026',
-    url: arsae('resolucao-226-2026.pdf'),
+    url: 'https://www.arsae.mg.gov.br/wp-content/uploads/2026/06/226_2026_homologa_tabela_precos_prazos_servicos_nao_tarifados_copasa.pdf',
     descricao: 'Reajuste tarifário anual 2026',
   },
   ntCre10: {
     titulo: 'Nota Técnica CRE 10/2025',
-    url: arsae('nt-cre-10-2025.pdf'),
+    url: 'https://www.arsae.mg.gov.br/wp-content/uploads/2025/06/NT_CRE_10_2025_EstruturaTarifaria_PosCP_corrigida28082025.pdf',
     descricao: 'Estrutura tarifária pós-consulta pública',
   },
   ntGrt01: {
@@ -37,7 +37,7 @@ export const FONTES = {
   },
   tarifasXlsx: {
     titulo: 'Tarifas COPASA 2025–2026 (XLSX)',
-    url: arsae('tarifas-copasa-2025-2026.xlsx'),
+    url: 'https://www.arsae.mg.gov.br/wp-content/uploads/2026/02/TarifasCOPASA.xlsx',
     descricao: 'Planilha oficial com valores tarifários',
   },
   arr2025: {
@@ -46,26 +46,26 @@ export const FONTES = {
   },
   resolucao111: {
     titulo: 'Resolução ARSAE 111/2018',
-    url: arsae('resolucoes/resolucao-111-2018.pdf'),
+    url: 'https://www.arsae.mg.gov.br/images/documentos/audiencia_publica/Resolucao_111_ReajusteCopasa_2018.pdf',
     descricao: 'Primeira revisão tarifária periódica',
   },
   relProMananciais: {
     titulo: 'Relatório Técnico Pró-Mananciais',
-    url: arsae('relatorio-tecnico-pro-mananciais.pdf'),
+    url: 'https://www.arsae.mg.gov.br/wp-content/uploads/2021/06/Relatório-Técnico_Pró-Mananciais_com-relatoria_final.pdf',
   },
 
   manualMedicao: {
     titulo: 'Manual de Medição Individualizada',
-    url: copasa('manual-medicao-individualizada.pdf'),
+    url: 'https://www.copasa.com.br/wps/wcm/connect/4e2ed1dd-d510-4532-a584-88b62e474a2f/MedicaoIndividualizada_Copasa_Copanor.pdf',
     descricao: 'Manual técnico COPASA — 79 páginas',
   },
   estatutoSocial: {
     titulo: 'Estatuto Social COPASA',
-    url: copasa('copasa-estatuto-social.pdf'),
+    url: 'https://ri.copasa.com.br/governanca-corporativa/estatuto-social',
   },
   codigoConduta: {
     titulo: 'Código de Conduta COPASA',
-    url: copasa('copasa-codigo-conduta.pdf'),
+    url: 'https://ri.copasa.com.br/governanca-corporativa/etica-e-integridade/codigo-de-conduta',
   },
   regulamento2009: {
     titulo: 'Regulamento de Serviços 2009',
@@ -74,36 +74,36 @@ export const FONTES = {
 
   lei11445: {
     titulo: 'Lei Federal 11.445/2007',
-    url: legislacao('lei-11445-2007.html'),
+    url: 'http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11445.htm',
   },
   lei14026: {
     titulo: 'Lei Federal 14.026/2020',
-    url: legislacao('lei-14026-2020.html'),
+    url: 'http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14026.htm',
   },
   lei13312: {
     titulo: 'Lei Federal 13.312/2016',
-    url: legislacao('federal/lei-13312-2016.html'),
+    url: 'http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13312.htm',
   },
   lei14898: {
     titulo: 'Lei Federal 14.898/2024',
-    url: legislacao('federal/lei-14898-2024.html'),
+    url: 'http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14898.htm',
   },
   lei18309: {
     titulo: 'Lei Estadual 18.309/2009',
-    url: legislacao('estadual/lei-18309-2009-arsae.pdf'),
+    url: 'https://www.almg.gov.br/legislacao-mineira/texto/LEI/18309/2009/',
   },
   decreto47884: {
     titulo: 'Decreto Estadual 47.884/2020',
-    url: legislacao('estadual/decreto-47884-2020.pdf'),
+    url: 'https://www.almg.gov.br/legislacao-mineira/texto/DEC/47884/2020/',
   },
 
   stjTema414: {
     titulo: 'STJ — Tema 414',
-    url: judiciario('stj/stj-tema-414.html'),
+    url: 'https://processo.stj.jus.br/repetitivos/temas_repetitivos/pesquisa.jsp?novaConsulta=true&tipo_pesquisa=T&num_tema=414',
   },
   stjRepetitivo: {
     titulo: 'STJ — Recursos Repetitivos COPASA',
-    url: judiciario('stj/stj-repetitivo-copasa.html'),
+    url: 'https://processo.stj.jus.br/SCON/pesquisar.jsp?livre=COPASA&b=ACOR&thesaurus=JURIDICO&p=true',
   },
   tjmgCorte: {
     titulo: 'TJMG — Corte Abusivo de Esgoto',
@@ -120,7 +120,7 @@ export const FONTES = {
   },
   stjRevisao2024: {
     titulo: 'STJ revisa Tema 414 — Migalhas (2024)',
-    url: imprensa('migalhas-2024-stj.txt'),
+    url: 'https://www.migalhas.com.br/quentes/413516/stj-revisa-tema-414-sobre-cobranca-de-agua-em-condominios',
   },
   novasTarifas2026: {
     titulo: 'Novas tarifas COPASA — G1 (2026)',
